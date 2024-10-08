@@ -22,14 +22,16 @@ export default function Home() {
           <span className="block">do eiusmod tempor incididunt ut labore.</span>
         </p>
 
-        
+        <button className="text-white bg-red-400 border-2 border-red-400 hover:bg-white hover:text-black hover:border-white py-2 px-3 md:py-4 md:px-10 text-xs md:text-sm lg:text-lg">
+          DISCOVER MORE
+        </button>
       </div>
       <div className="lg:pt-20">
-      <img
-        className="w-full pr-6 md:pr-12"
-        src={HeroBanner}
-        alt="Modern house model"
-      />
+        <img
+          className="w-full pr-6 md:pr-12"
+          src={HeroBanner}
+          alt="Modern house model"
+        />
       </div>
     </div>
   );
