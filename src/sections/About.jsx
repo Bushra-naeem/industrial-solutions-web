@@ -1,8 +1,7 @@
 import React from "react";
-// import aboutBanner1 from "../assets/images/about-banner-1.png";
-// import aboutBanner2 from "../assets/images/about-banner-2.jpg";
-import aboutImg1 from "../assets/images/about_page.png";
-import aboutImg2 from "../assets/images/about_page.png";
+import aboutImg1 from "../assets/images/checkimg.jpg";
+import aboutImg2 from "../assets/images/checkimg.jpg";
+import { FiArrowRight } from "react-icons/fi";
 import { IoHomeOutline } from "react-icons/io5";
 import { IoLeafOutline } from "react-icons/io5";
 import { IoWineOutline } from "react-icons/io5";
@@ -25,68 +24,75 @@ export default function About() {
           />
         </div>
       </div>
-      <div className="w-full lg:w-1/2 px-6 lg:mx-0 space-y-7">
-        <div>
-          <button className="text-red-500 font-semibold border-2 border-pink-100 py-2 p-4 bg-pink-50 rounded-3xl mt-8 lg:mt-12">
-            About Us
+      <div className="w-full lg:w-1/2 px-6 space-y-7">
+        <h3 className="text-4xl text-gray-900 font-bold">About Us</h3>
+        <h1 className="text-4xl font-bold text-gray-800">
+          We build everything that you need
+        </h1>
+        <p className="text-gray-600">
+          We craft unique digital experiences. With more than 7 years of
+          expertise, we design and code clean websites.
+        </p>
+
+        {/* Bullet Points */}
+        <ul className="space-y-2">
+          <li className="flex items-center text-gray-700">
+            <span className="text-orange-500 mr-2">➤</span> Providing Solutions
+            For Construction, Management
+          </li>
+          <li className="flex items-center text-gray-700">
+            <span className="text-orange-500 mr-2">➤</span> Engineers design and
+            build the structure
+          </li>
+        </ul>
+
+        {/* Mission and Vision */}
+        <div className="mt-8 space-y-6">
+          <div className="flex items-start space-x-4">
+            <div className="bg-gray-100 p-4 rounded-md">
+              <img
+                src="path-to-mission-icon.png"
+                alt="Mission Icon"
+                className="w-8 h-8"
+              />
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold text-gray-800">
+                Our Mission
+              </h4>
+              <p className="text-gray-600">
+                We craft unique digital experiences. With more years of
+                expertise we design.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-4">
+            <div className="bg-gray-100 p-4 rounded-md">
+              <img
+                src="path-to-vision-icon.png"
+                alt="Vision Icon"
+                className="w-8 h-8"
+              />
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold text-gray-800">
+                Our Vision
+              </h4>
+              <p className="text-gray-600">
+                We craft unique digital experiences. With more years of
+                expertise we design.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Button */}
+        <div className="mt-8">
+          <button className="bg-black text-white py-2 px-6 rounded-md inline-flex items-center">
+            Explore Our Company
+            <FiArrowRight className="ml-2" />
           </button>
-        </div>
-        <div>
-          <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-5">
-            <span className="inline-block">
-              The Leading Real Estate Rental Marketplace.
-            </span>
-          </h1>
-        </div>
-        <div className="mb-5">
-          Over 39,000 people work for us in more than 70 countries all over the
-          This breadth of global coverage, combined with specialist services
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-3 lg:gap-4">
-          <div className="flex items-center gap-2">
-            <span className="mt-1 text-red-500 bg-pink-100 p-2 sm:p-3 rounded-full">
-              <IoHomeOutline />
-            </span>
-            <span className="whitespace-nowrap">Smart Home Design</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <span className="mt-1 text-red-500 bg-pink-100 p-2 sm:p-3 rounded-full">
-              <IoLeafOutline />
-            </span>
-            <span className="whitespace-nowrap">Beautiful Scene Around</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <span className="mt-1 text-red-500 bg-pink-100 p-2 sm:p-3 rounded-full">
-              <IoWineOutline />
-            </span>
-            <span className="whitespace-nowrap">Exceptional Lifestyle</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <span className="mt-1 text-red-500 bg-pink-100 p-2 sm:p-3 rounded-full">
-              <IoShieldCheckmarkOutline />
-            </span>
-            <span className="whitespace-nowrap">Complete 24/7 Security</span>
-          </div>
-        </div>
-        <div className="border-2 border-pink-100 bg-pink-50 py-4 px-5 mb-6">
-          "Enimad minim veniam quis nostrud exercitation llamco laboris. Lorem
-          ipsum dolor sit amet"
-        </div>
-        <div>
-          <Link
-            to="service"
-            spy="true"
-            smooth="true"
-            offset={-100}
-            duration={500}
-            className="text-white bg-red-400 border-2 border-red-400 px-4 py-2 sm:px-8 sm:py-4 inline-block cursor-pointer"
-          >
-            EXPLORE OUR COMPANY
-          </Link>
         </div>
       </div>
     </section>

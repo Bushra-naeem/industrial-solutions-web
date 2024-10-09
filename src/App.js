@@ -6,6 +6,7 @@ import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Service from "./sections/Service";
 import TestimonialSection from "./sections/Testimonial";
+import Team from "./sections/Team";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <About />
       <Service />
+      <Team />
       <TestimonialSection />
       <Contact />
       <Footer />

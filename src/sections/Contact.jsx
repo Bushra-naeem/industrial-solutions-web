@@ -8,7 +8,7 @@ export default function Contact() {
     >
       {/* Left Section */}
       <div className="lg:w-1/2 mx-4 sm:mx-8 mb-8 lg:mb-0">
-        <h2 className="text-3xl sm:text-6xl font-bold mb-8 mt-6">
+        <h2 className="text-3xl sm:text-6xl text-gray-900 font-bold mb-8 mt-6">
           Are You Ready to Unleash Your Vision?
         </h2>
         <p className="text-gray-600 text-lg">
@@ -89,7 +89,7 @@ export default function Contact() {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-blue-800 text-white py-2 px-4 rounded-lg hover:bg-blue-900 w-full"
+              className="bg-gray-700 text-white py-2 px-4 rounded-lg hover:bg-gray-700 w-full"
             >
               Submit
             </button>

@@ -149,7 +149,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base">
+                <a href="#pages" className="text-base">
                   Our Team
                 </a>
               </li>
