@@ -4,8 +4,9 @@
     }
   }
   
-  @media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 768px) {
     .custom-width {
       width: 60vw;
     }
-  }
+}
+
