@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { client_list } from "../assets/assets";
-
+import clientsImg from "../assets/images/clientsImg.avif"
 const TestimonialSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Automatically cycle through testimonials every 3 seconds (faster)
+  // Automatically cycle through testimonials every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % client_list.length);
-    }, 3000); // Faster switch interval (3 seconds)
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, []);
@@ -19,17 +19,17 @@ const TestimonialSection = () => {
 
   return (
     <section className="bg-gray-800 text-white py-20">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 lg:px-12">
-        {/* Left Side - Testimonial Content */}
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 lg:px-16">
+        {/* Left Side */}
         <div className="md:w-1/2 space-y-6 mx-0 sm:mx-12">
           <h2 className="text-orange-400 text-sm uppercase">Testimonials</h2>
-          <h3 className="text-4xl font-bold">What client says</h3>
+          <h3 className="text-3xl font-bold">What client says</h3>
 
           {/* Testimonial Slider */}
           <div className="mt-6">
             <div className="transition-opacity duration-300 ease-in-out">
               {" "}
-              {/* Faster transition */}
+
               <div className="flex items-center space-x-4">
                 <img
                   src={client_list[activeIndex].image}
@@ -45,7 +45,7 @@ const TestimonialSection = () => {
                   </p>
                 </div>
               </div>
-              <p className="mt-4 text-lg text-gray-300">
+              <p className="mt-4 text-base text-gray-300">
                 {client_list[activeIndex].text}
               </p>
             </div>
@@ -74,17 +74,16 @@ const TestimonialSection = () => {
           </div>
         </div>
 
-        {/* Right Side - Image */}
-        <div className="md:w-1/2 mt-8 md:mt-0 mx-0 sm:mx-12 relative">
+        {/* Right Side */}
+        <div className="md:w-1/2 mt-8 md:mt-0 mx-0 lg:mx-12 relative">
           <img
-            src="https://via.placeholder.com/600x400" // Placeholder for large background image
-            alt="Construction"
-            className="rounded-lg object-cover w-full h-full clip-bottom" // Apply the clip-path class here
+            src={clientsImg}
+            alt="clients"
+            className="rounded-md object-cover w-full h-full clip-bottom" 
           />
 
-          {/* Testimonial Circles Overlay */}
-          <div className="absolute top-10 right-10 bg-gray-800 p-2 sm:p-4 rounded-lg">
-            <span className="block text-orange-400 text-sm sm:text-lg font-bold">
+          <div className="absolute bottom-2 right-10 bg-gray-800 p-1 lg:p-2 rounded-md">
+            <span className="block text-orange-400 text-sm lg:text-base font-bold">
               2M+
             </span>
             <span className="block text-gray-400 text-sm">
@@ -96,7 +95,7 @@ const TestimonialSection = () => {
                   key={index}
                   src={test.image}
                   alt={test.name}
-                  className="w-8 sm:w-10 h-8 sm:h-10 rounded-full border-1 sm:border-2 border-orange-400"
+                  className="w-6 lg:w-10 h-6 lg:h-10 rounded-full border-1 lg:border-2 border-orange-400"
                 />
               ))}
             </div>
