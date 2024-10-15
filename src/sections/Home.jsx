@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 
 export default function Home() {
   return (
+    <>
     <div
       className="w-full h-screen bg-gray-700 py-20 md:py-36 text-white mb-12 relative bg-cover bg-center"
       id="home"
@@ -50,6 +51,7 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

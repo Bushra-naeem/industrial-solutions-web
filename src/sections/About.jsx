@@ -4,11 +4,6 @@ import aboutImg2 from "../assets/images/aboutPage2.jpg";
 import { FiArrowRight } from "react-icons/fi";
 import missionImg from "../assets/images/missionImg.jpg";
 import visionImg from "../assets/images/visionImg.jpg";
-import { IoHomeOutline } from "react-icons/io5";
-import { IoLeafOutline } from "react-icons/io5";
-import { IoWineOutline } from "react-icons/io5";
-import { IoShieldCheckmarkOutline } from "react-icons/io5";
-import { Link } from "react-scroll";
 
 export default function About() {
   return (

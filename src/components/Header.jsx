@@ -27,7 +27,6 @@ export default function Header() {
           <img src={logo} alt="" className="h-14 w-28" />
         </Link>
 
-        {/* Mobile menu button */}
 
         <button
           className="text-3xl flex justify-end items-center cursor-pointer bg-transparent border-none outline-none md:hidden"
@@ -89,7 +88,7 @@ export default function Header() {
           </span>
           <div className="text-gray-900">
             <span className="block">Call us any time</span>
-            <span>+2590256215</span>
+            <span>+92-300-6360580</span>
           </div>
         </div>
 
